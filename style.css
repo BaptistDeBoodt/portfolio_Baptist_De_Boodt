@@ -1,0 +1,180 @@
+:root {
+    --background-color: #073b4c;
+    --circle-one: #118ab2;
+    --circle-two: #06d6a0;
+    --circle-three: #ffd166;
+    --circle-four: #f78a69;
+    --circle-five: #ef476f;
+    --white: white;
+
+
+
+    /* --background-color: #870fe9;
+    --circle-one: #6f0cc0;
+    --circle-two: #620ca8;
+    --circle-three: #4b0b7f;
+    --circle-four: #470a78;
+    --circle-five: #320756;
+    --white: white; */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+main {
+    padding: 7rem 5rem 5rem 5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Make main take up remaining space */
+    z-index: 1;
+}
+
+h1, p, a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    text-align: center;
+}
+
+
+
+/* Background Circles */
+.background-circles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1; /* Send circles behind the content */
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-one {
+    background-color: var(--circle-one);
+    height: 100rem;
+    width: 100rem;
+}
+
+.circle-two {
+    background-color: var(--circle-two);
+    height: 80rem;
+    width: 80rem;
+}
+
+.circle-three {
+    background-color: var(--circle-three);
+    height: 60rem;
+    width: 60rem;
+}
+
+.circle-four {
+    background-color: var(--circle-four);
+    height: 40rem;
+    width: 40rem;
+}
+
+.circle-five {
+    background-color: var(--circle-five);
+    height: 20rem;
+    width: 20rem;
+}
+
+/* Grid of Buttons */
+.button-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr); /* Set to 3 items per row */
+    gap: 3rem;
+    z-index: 10;
+    position: relative; /* This keeps the buttons on top of the circles */
+}
+
+button {
+    padding: 1rem;
+    width: 10rem;
+    height: 6rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: var(--background-color);
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--circle-one);
+}
+
+/* Header Styling */
+header {
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    background-color: var(--circle-three);
+    margin-bottom: 3rem;
+}
+
+/* footer {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    z-index: 20;
+    background-color: var(--background-color);
+    color: var(--white);
+} */
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    z-index: 20;
+    background-color: var(--background-color);
+    color: var(--white);
+    position: relative; /* Keep the footer at the bottom */
+}
+
+@media (max-width: 900px) {
+    .button-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .button-grid {
+        grid-template-columns: 1fr; /* 1 item per row */
+    }
+}
