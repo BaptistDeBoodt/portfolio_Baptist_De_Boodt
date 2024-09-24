@@ -1,0 +1,15 @@
+Genereer via ChatGPT een verhaal dat bestaat uit minstens 5 delen (hoofdstukken). Maak hiervoor een one-page story pagina en maak gebruik van:
+
+(*Het parallax effect)
+
+*Een of meerdere javascript libraries om content te laten verschijnen bij het scrollen
+
+(*Afbeeldingen kan je eventueel ook laten genereren door AI)
+
+(*Maak ook een interactieve tijdlijn, die gebruikt kan worden als navigatie naar de verschillende hoofdstukken.)
+
+(*Voeg ook een titelpagina toe met de naam van de story en jouw eigen naam.)
+
+(*Maak gebruik van scss)
+
+
