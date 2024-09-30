@@ -167,6 +167,33 @@ footer {
     position: relative; /* Keep the footer at the bottom */
 }
 
+.box {
+    position: relative;
+}
+
+.hover {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 12rem;
+    color: var(--background-color);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    opacity: 0;
+    z-index: -1;
+}
+
+/* Only show the .hover element when hovering over .message-hover */
+.message-hover:hover + .hover {
+    opacity: 1;
+    z-index: 5;
+}
+
+.box:nth-last-child(-n+3) .hover {
+    transform: translate(-50%, -200%); /* Move the hover above the message-hover */
+}
+
 @media (max-width: 900px) {
     .button-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 items per row */
