@@ -1,0 +1,233 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, p, a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+/* Header Styling */
+header {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--background-color, #1a1a1a);
+  color: var(--white, #fff);
+  padding: 2rem;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.home-text {
+  max-width: 600px;
+}
+
+.home-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.home-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.home-image img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    z-index: 20;
+    background-color: var(--background-color);
+    color: var(--white);
+    position: relative; /* Keep the footer at the bottom */
+}
+
+.carousel {
+  height: 100vh; /* or any desired height */
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  width: 70%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 7px 7px 10px 5px rgba(0, 0, 0, 0.26);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Active slide is centered */
+.slide[data-active] {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%) rotateY(0deg);
+  z-index: 2;
+}
+
+/* Animations for sliding in/out */
+.slide.slide-in-right {
+  transform: translate(-50%, -50%) translateX(100%) rotateY(-30deg);
+  opacity: 0;
+}
+
+.slide.slide-in-left {
+  transform: translate(-50%, -50%) translateX(-100%) rotateY(30deg);
+  opacity: 0;
+}
+
+.slide.slide-out-left {
+  transform: translate(-50%, -50%) translateX(-100%) rotateY(-30deg);
+  opacity: 0;
+}
+
+.slide.slide-out-right {
+  transform: translate(-50%, -50%) translateX(100%) rotateY(30deg);
+  opacity: 0;
+}
+
+.slide-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50rem;
+  padding: 2rem;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+}
+
+.slide-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  color: white;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.slide-link {
+  color: white;
+  text-decoration: none;
+  text-align: left;
+}
+
+.slide-info h2 {
+  margin: 0 0 5px;
+  font-size: 1.5rem;
+}
+
+.slide-info p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.slide-info .tags {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
