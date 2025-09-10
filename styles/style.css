@@ -52,7 +52,9 @@ header a {
 
 .home-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: center;
   align-items: center;
   gap: 4rem;
   max-width: 1200px;
@@ -100,6 +102,7 @@ header a {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  background-color: aqua;
 }
 
 
@@ -231,3 +234,196 @@ footer {
 .carousel-button.next {
   right: 1rem;
 }
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: var(--background-color, #1a1a1a);
+  color: var(--white, #fff);
+  padding: 4rem 2rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-image img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.about-text {
+  max-width: 700px;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.about-text h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem 1rem;
+}
+
+.skills-list li {
+  background: rgba(255,255,255,0.05);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-item p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.timeline-item-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timeline-item-header img {
+  width: 30px;
+  height: 30px;
+}
+
+li img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* ========================== */
+/* 📱 Responsive Design       */
+/* ========================== */
+
+/* Tablet (≤ 1024px) */
+@media (max-width: 1024px) {
+  .home-container,
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .home-text,
+  .about-text {
+    max-width: 100%;
+  }
+
+  .home-image img,
+  .about-image img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  header {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-text h1,
+  .about-text h1 {
+    font-size: 2rem;
+  }
+
+  .home-text p,
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .home-image img,
+  .about-image img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  header {
+    gap: 0.5rem;
+  }
+
+  header a {
+    font-size: 1.2rem;
+  }
+
+  .social-links {
+    gap: 0.8rem;
+  }
+
+  .social-links a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .home,
+  .about {
+    padding: 2rem 1rem;
+  }
+}
+
