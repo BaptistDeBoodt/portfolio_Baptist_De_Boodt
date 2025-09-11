@@ -187,7 +187,7 @@ footer {
   border-radius: 50rem;
   padding: 2rem;
   cursor: pointer;
-  z-index: 1;
+  z-index: 7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -366,6 +366,11 @@ li img {
     gap: 1rem;
   }
 
+  .slide {
+    width: 90%;
+    height: 80%;
+  }
+
   .skills-list {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
@@ -400,6 +405,17 @@ li img {
   .timeline-item h3 {
     font-size: 1.1rem;
   }
+
+  .slide {
+    height: 85%;
+    width: 80%;
+  }
+
+  .carousel-button {
+    padding: 1.5rem;
+    height: 1.8rem;
+    width: 1.8rem;
+  }
 }
 
 /* Small Mobile (≤ 480px) */
@@ -424,6 +440,17 @@ li img {
   .home,
   .about {
     padding: 2rem 1rem;
+  }
+
+  .carousel-button {
+    padding: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .slide {
+    height: 70%;
+    width: 70%;
   }
 }
 

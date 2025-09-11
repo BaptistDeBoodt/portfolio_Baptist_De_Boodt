@@ -6,12 +6,19 @@ const projects = [
     image: "../images/gladiator.png",
     link: "https://drive.google.com/file/d/1BKb1Szz2_mvIKv6OkkaZXGPOyfvuJfzO/view?usp=sharing"
   },
-    {
+  {
     title: 'Portfolio',
     description: 'During my studies, I had the opportunity to immerse myself in the world of 3D. The aim was to create a 3D portfolio in a creative way. My final version is a horror-themed journey through all my projects, preceded by a point-and-click game. Play with the sound on (if you dare)!',
     tags: 'Three.js, React, Blender',
     image: "../images/horrormansion.png",
     link: "https://3-d-portfolio-five-omega.vercel.app/"
+  },
+  {
+    title: "Small Paws (video)",
+    description: "Small Paws was my big graduation project. I wanted to do something to support animal shelters. After talking to a few shelters, I developed a planning system that gives volunteers an overview of all the dogs, when they are available for walks, etc.",
+    tags: "React Native Expo, Supabase",
+    image: "../images/small-paws.png",
+    link: "https://drive.google.com/file/d/1whytitpmVoEisV1Ecni7o4UX1Ox8ElGE/view?usp=sharing"
   },
   {
     title: 'Tower VS Cube',
@@ -29,57 +36,57 @@ const projects = [
   },
   {
     title: "Crime Scene",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    tags: "React, Node.js, Express, MongoDB",
+    description: "The crime scene was a project to see if I was able to model 10 objects in Blender, then position them in an isometric room, and finally bake them to achieve this end result.",
+    tags: "Three.js, Blender, React",
     image: "../images/crimescene.png",
     link: "https://eindopdracht-baptist-deboodt-baptists-projects.vercel.app/"
   },
   {
     title: 'Dog House',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    tags: '',
+    description: 'In our second year, I went to Barcelona with my class to attend the OFFF festival. The aim was to create an original image of a speaker who appealed to us personally. I opted for Dogstudio.',
+    tags: 'Blender, Three.js, React',
     image: "../images/doghouse.JPG",
     link: "https://offf-festival-red.vercel.app/"
   },
   {
     title: 'Guitarz (video)',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    tags: '',
+    description: 'This was my first assignment involving React. The aim was to incorporate the initial course material into a mini website. Since I play the guitar myself, I chose this topic.',
+    tags: 'React',
     image: "../images/guitarz.JPG",
     link: "https://drive.google.com/file/d/1xONE9FmxgXD3O2y8iFxWfM43MvY_O2g1/view?usp=drive_link"
   },
   {
     title: 'Waves',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    tags: '',
+    description: 'This is my first (major) coding assignment ever. It is built solely with HTML and CSS. What was then considered an assignment that would take days or weeks to complete, I could now do in a matter of hours. But at the time, I experienced it as the most difficult assignment ever, not knowing what lay ahead of me. However simple and non-responsive it may be, I am still very proud of it.',
+    tags: 'HTML, CSS, Non-responsive',
     image: "../images/waves.JPG",
     link: "../projects/Waves/index.html"
   },
     {
     title: 'Love Jet (video)',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    tags: '',
+    description: 'Love Jet was my first “big” PHP project. The idea was to develop a niche community page. People who want to date on airplanes might be a super silly niche idea, but it seemed funny to me at the time. I had to learn how to work with Laravel, which was also a challenge.',
+    tags: 'PHP, Laravel',
     image: "../images/lovejet.JPG",
     link: "https://drive.google.com/file/d/1TDbkPgSG3-oma17Jfg396JSSREaUyttr/view?usp=sharing"
   },
   {
     title: 'Pythagoras',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    tags: '',
+    description: 'Pita Pythagoras was an assignment aimed at teaching students how a design system works. It forms the basis before starting to code a website. Once again, it consists solely of HTML and CSS, with the idea originating from coding components and using only those without coding extra CSS.',
+    tags: 'HTML, CSS, Figma',
     image: "../images/pythagoras.JPG",
     link: "../projects/Design System/index.html"
   },
   {
     title: 'Travelplanner (video)',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    tags: '',
+    description: 'Travelplanner was the first time (and probably the last time) I worked with the Lit framework. It was the first time I had to work with a backend and front end where I had to use a Mongo database. The end result is a small travel planner.',
+    tags: 'Lit, MongoDB',
     image: "../images/travelplanner.JPG",
     link: "https://drive.google.com/file/d/1dtgebeypk3eGtNkgJq5MwNN8m7kbWofK/view?usp=sharing"
   },
   {
     title: 'Versace',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    tags: '',
+    description: `Versaci is the first mini website I had to build with CSS animations. It's small and simple, but I had a lot of fun making it.`,
+    tags: 'HTML, CSS',
     image: "../images/versace.JPG",
     link: "../projects/opdracht 1/index.html"
   },
