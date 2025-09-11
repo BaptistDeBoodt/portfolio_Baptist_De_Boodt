@@ -374,6 +374,12 @@ li img {
   .skills-list {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
+
+  .social-links {
+    gap: 0.8rem;
+    flex-direction: column;
+    display: flex;
+  }
 }
 
 /* Mobile (≤ 768px) */
@@ -430,6 +436,8 @@ li img {
 
   .social-links {
     gap: 0.8rem;
+    flex-direction: column;
+    display: flex;
   }
 
   .social-links a {
