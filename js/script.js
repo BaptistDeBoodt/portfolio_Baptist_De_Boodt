@@ -21,6 +21,13 @@ const projects = [
     link: "https://drive.google.com/file/d/1whytitpmVoEisV1Ecni7o4UX1Ox8ElGE/view?usp=sharing"
   },
   {
+    title: "HNO Assenede",
+    description: "My first real Craft CMS project. The goal was to create a scheduling system for a pingpong club. The website had to be able to handle drinks bought by members and guests. PLayers needed to be able to claim match spots, but the admin still needed to be able to verify if a player was allowed to play.",
+    tags: "Craft CMS",
+    image: "../images/pingpong.png",
+    link: "https://drive.google.com/file/d/19y6xBonN6vWsxPEgElgjWa1aFBqMhmGS/view?usp=sharing"
+  },
+  {
     title: 'Tower VS Cube',
     description: 'Tower versus cube is a 3D game that I developed using Three.js. The aim was to demonstrate that we were capable of creating a small video game. Enjoy playing!',
     tags: 'Three.js, React',
