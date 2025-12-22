@@ -1,4 +1,11 @@
 const projects = [
+  {
+    title: "Studio Westonia",
+    description: "Studio Westonia is the first website I created that is being used by a company. Westonia was built by a fellow student and me for a video company. It was a tremendous learning opportunity and taught me how to interact with clients and collaborate in a professional context.",
+    tags: "React, Supabase",
+    image: "../images/westonia.JPG",
+    link: "https://www.studiowestonia.be/"
+  },
   { 
     title: "Gladiator (video)",
     description: "Gladiator was my vision of what a boxing webshop should look like. I wanted it to have a rugged and cold look. It was also my chance to develop my React.js skills. The exercise was simple: I had to immerse myself in the world of boxing webshops and find inspiration. I was then expected to develop a complete design and finally convert it into React code. The result was Gladiator, where lions are tamed!",
